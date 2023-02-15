@@ -4,7 +4,7 @@ pipeline {
         docker { image 'node:16.13.1-alpine' }
     }
     stages {
-        stage('Deploy') {
+        stage('Build') {
             steps {
                 sh 'node --version'
             }
